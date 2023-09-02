@@ -1,0 +1,389 @@
+/**************************
+********** FONTS **********
+***************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/**************************
+******* COMMON CSS ********
+***************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/**************************
+********** HEADER *********
+***************************/
+.section-header {
+    background-color: #161616;
+    color: #ffffff;
+    padding: 0px 100px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    padding: 100px 0;
+    width: 50%;
+}
+
+.heading-primary {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.heading-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero {
+    width: 50%;
+}
+
+.hero-img {
+    width: 523px;
+    transform: translateY(1.2%);
+}
+
+.btn {
+    background-color: #DD0000;
+    color: #ffffff;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-icon {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+/**************************
+****** AFTER HEADER *******
+***************************/
+.section-match-details {
+    margin-bottom: 130px;
+}
+
+.match-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.match-list-details {
+    background-color: #161616;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+.content-list {
+    width: 252px;
+    height: 64px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.content-list a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.content-list:last-child {
+    margin-bottom: 0;
+}
+
+.active {
+    background-color: #DD0000;
+}
+
+.active a {
+    color: #ffffff;
+}
+
+.match-live-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.match-live-box {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border-radius: 4px;
+}
+
+.match-img {
+    width: 100%;
+}
+
+.match-live-content {
+    padding: 15px;
+}
+
+.transfer {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #161616;
+    text-align: right;
+    border: 1px solid #161616;
+    border-radius: 4px;
+    padding: 1px 8px;
+    margin-bottom: 10px;
+}
+
+.match-title {
+    font-size: 16px;    
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.fa-clock {
+    margin-right: 5px;
+}
+
+.fa-comment-dots {
+    margin-right: 5px;
+}
+
+.time span:first-child {
+    margin-right: 30px;
+}
+
+/**************************
+********** FOOTER *********
+***************************/
+.section-footer {
+    background-color: #161616;
+    padding: 100px 50px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-nav-list {
+    list-style-type: none;
+    margin-right: 40px;
+    line-height: 2.5;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: #B9B9B9;
+    font-size: 16px;
+}
+
+/**************************
+***************************
+****** MATCH PAGE CSS *****
+***************************
+***************************/
+.flag-box {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 50px 30px;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    width: 100%;
+}
+
+.vs {
+    margin: 0 15px;
+}
+
+.country-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.country-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #161616;
+    margin-bottom: 10px;
+}
+
+.game-date {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
+
+/**************************
+***************************
+****** MEDIA QUERIES *****
+***************************
+***************************/
+
+/* Tab */
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .section-header {
+        padding: 0 30px;
+    }
+
+    .heading-primary {
+        font-size: 40px;
+    }
+
+    .heading-description {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        width: 100%;
+        transform: translateY(2%);
+    }
+
+    .title {
+        padding: 40px 0;
+    }
+
+    .match-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-list {
+        width: 170px;
+    }
+    
+    .content-list a {
+        font-size: 16px;
+    }
+
+    .match-list-details {
+        background: none;
+        display: flex;
+        margin-right: 0;
+    }
+
+    .match-img {
+        width: 100%;
+    }
+
+    .match-live-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+       
+}
+
+/* Mobile */
+@media only screen and (max-width: 520px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    .section-header {
+        margin: 0;
+    }
+
+    .heading-primary {
+        font-size: 22px;
+    }
+
+    .heading-description {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        height: 100%;
+        transform: translateY(4%);
+    }
+
+    .match-details {
+        align-items: center;
+    }
+
+    .content-list a {
+        font-size: 16px;
+    }
+
+    .match-list-details {
+        flex-direction: column;
+    }
+
+    .match-live-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-footer  {
+        padding: 0px;
+    }
+}
